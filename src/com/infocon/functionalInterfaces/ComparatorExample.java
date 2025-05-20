@@ -2,7 +2,7 @@ package com.infocon.functionalInterfaces;
 
 import java.util.Comparator;
 
-public class ComparatorInterfaceExample {
+public class ComparatorExample {
     public static void main(String[] args) {
         Comparator<Integer> c = (a, b) -> {
             // if a>b then 1
