@@ -3,6 +3,9 @@ package com.infocon.data;
 import java.util.List;
 
 public class EmployeeData {
+    public static Employee getEmpobj() {
+        return new Employee(201, "Rama Raju", 5300, List.of("Java", "GO", "AWS", "Spring"), 4);
+    }
     public static List<Employee> getAllEmployees() {
         Employee e1 = new Employee(101, "John Doe", 5000, List.of("Java", "Spring"), 2);
         Employee e2 = new Employee(102, "Amita Rao", 7000, List.of("GO", "Java"), 1);
@@ -11,7 +14,8 @@ public class EmployeeData {
         Employee e5 = new Employee(105, "Balmukund", 8400, List.of("Hadoop", "Tableu"), 1);
         Employee e6 = new Employee(106, "Smital Rai", 5000, List.of(".Net", "Azure"), 2);
         Employee e7 = new Employee(107, "Amisha Patel", 3900, List.of("C++", "GO"), 4);
+        Employee e8 = new Employee(108, "John Doe", 3900, List.of("AWS", "GO"), 3);
 
-        return List.of(e1, e2, e3, e4, e5, e6, e7);
+        return List.of(e1, e2, e3, e4, e5, e6, e7, e8, getEmpobj());
     }
 }
